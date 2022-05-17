@@ -1,0 +1,262 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+body{ 
+    background-color: #181818;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display:flex; 
+    flex-direction:column;
+    min-height: 100vh;
+}
+
+a{
+    transition: color 0.3s ease-out;
+    color: #fff;
+    text-decoration: none;
+    font-weight:700;
+}
+a:hover {
+    
+    color: #ffcd00;
+    
+}
+
+p, li{
+    color: #999;
+}
+html body header{
+    display:flex;
+    justify-content: space-between;
+    background-color: #020202;
+    padding: 15px 30px;
+    box-shadow: 3px 0 5px #151515;
+   
+}
+header .logo{
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    font-weight:700;
+    transition: color 0.3s ease-out;
+}
+header .logo:hover{
+    color: #ffcd00;
+}
+html body nav ul{
+    list-style: none;
+    font-size:16px;
+}
+html body nav ul li{
+    display: inline-block;
+}
+
+html body nav ul li a{
+    padding: 0 15px;
+}
+
+.hero{
+
+    display:flex;
+    justify-content: center;
+    padding: 20px 50px;
+    margin:5% 15%;   
+    
+}
+.hero .hero-content{
+    width: 1200px;
+    display:flex;
+    flex-direction: row;
+}
+.hero h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.left{
+    width: 600px;
+    align-self: center;
+}
+.right{
+    width: 600px;
+    align-self: center;
+}
+.hero p{
+    margin-bottom: 16px;
+}
+
+.btn{
+    background-color: #FFDE00;
+    color:#181818;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease-out;
+}
+.btn:hover{
+    color:#181818;
+    background-color: #ffcd00;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 1200px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.full-width{
+    width: 100%;
+}
+
+
+.golden{
+    color:#FFDE00;
+}
+.bg-black{
+    background-color: #020202;
+}
+.padded{
+    padding: 20px 30px;
+}
+.vert-pad{
+    padding: 20px 0;
+}
+
+.card{
+    background-color: #181818;
+    
+    border: 1px solid #ddd;
+    padding: 20px 30px;
+}
+.third{
+    width: 360px;
+    margin: 20px
+}
+
+.contact-form input{
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #FFDE00;
+    border-radius:0;
+    height: 1.875rem;
+    padding: 0.313rem 0.625rem;
+    margin-bottom:0.938rem;
+    width:100%;
+
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    background-color: #020202;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    border: 1px solid #FFDE00;
+    
+}
+textarea{
+    height:6.25rem;
+    width:100%;
+    padding: 0.938rem 0.625rem;
+    resize: none;
+    
+}
+.btn-input{
+    margin-top:0.313rem;
+    color: #020202;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 0;
+    cursor: pointer;
+}
+footer{
+    
+    
+    width: 100%;
+    
+    margin-top: auto;
+    padding: 40px 0 0 0;
+    box-shadow: 3px 0 5px #151515;
+    
+}
+.github {
+    filter:  brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(123deg) brightness(103%) contrast(101%);
+    height:24px;
+}
+.github:hover{
+    
+    filter: brightness(0) saturate(100%) invert(77%) sepia(73%) saturate(726%) hue-rotate(359deg) brightness(102%) contrast(104%);
+}
+.footer-text{
+    color:#444;
+}
+ul.tech{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+li.tech{
+    margin:0 15px
+}
+h1.tech{
+    text-align: center;
+}
+li.skills{
+    margin-bottom:18px
+}
+.btn-primary{
+    margin-top:20px;
+}
+@media only screen and (max-width: 1200px) {
+   html, body{
+       max-width: 100%;
+   }
+    .card{
+        
+        width:85%;
+    }
+    .third{
+        margin:5% 0;
+    }
+    .margin{
+        margin: 0 5%;
+    }
+    .content{
+        
+        
+        align-items: center;
+    }
+    .padded{
+        padding: 0;
+    }
+    
+    .row,.hero .hero-content{
+        display: block;
+        margin:auto;
+        
+    }
+    .hero{
+        margin:0;
+    }
+
+    .right,.left, .m{
+        width: 90%;
+        margin:auto;
+        
+
+    }
+    ul.tech{
+        margin: 0!important;;
+    }
+    li.tech{
+        margin:0;
+    }
+  }

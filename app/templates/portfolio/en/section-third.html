@@ -1,0 +1,19 @@
+<div class="center padded bg-black ">
+    <div class="content auto">
+        <div class="row vert-pad">
+            <div class="left padded">
+                <h1>Contact Me</h1>
+                <p>Discuss a project or just want to say hi? My inbox is open for all</p>
+            
+            </div>
+            <div id="contact" class="right padded">
+                <form action="{{ url_for('portfolio.enMail')}}" method="post" class="contact-form">
+                    <input name="name" placeholder="Your Name" type="text" required/>
+                    <input name="email" type="email" placeholder="example@mail.com" required/>
+                    <textarea placeholder="Your Message" name="message" required minlength="10"></textarea>
+                    <button class="btn btn-input">SEND ME</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

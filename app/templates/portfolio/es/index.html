@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %} Bienvenido {% endblock %}
+{% include 'portfolio/es/header.html' %}
+{% block content %}
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left">
+                <h2>Hola, soy</h2>
+                <h1>Vicente Pérez</h1>
+                <h2>Software Developer </h2>
+                <a href="#contact" class="btn btn-primary delay">Contáctame</a>
+            </div>
+            <div class="right">
+                <img class="m" src="{{ url_for('static', filename="hero.png")}}" width=600px />
+    
+            </div>
+        </div>
+        
+    </div>
+    {% include 'portfolio/es/section-first.html' %}
+    {% include 'portfolio/es/section-second.html' %}
+    {% include 'portfolio/es/section-third.html' %}
+{% endblock %}
